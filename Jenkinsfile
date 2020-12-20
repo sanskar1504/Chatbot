@@ -1,6 +1,6 @@
 pipeline { 
     environment { 
-        registry = "himanshunikhare/flask-jenkins-docker-cicd" 
+        registry = "sanskar1504/chatbot" 
         registryCredential = 'dockerhub_id' 
         dockerImage = '' 
     }
@@ -8,7 +8,7 @@ pipeline {
     stages { 
         stage('Cloning our Git') { 
             steps { 
-                git 'https://github.com/himanshunikhare/flask-docker-jenkins-connectivity.git' 
+                git 'https://github.com/sanskar1504/Chatbot.git' 
                 echo "Cloned"
 
             }
