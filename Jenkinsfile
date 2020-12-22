@@ -13,6 +13,12 @@ pipeline {
 
             }
         } 
+		stage('Email Notification'){
+            steps{
+                mail bcc: '', body: 'Hey', cc: '', from: '', replyTo: '', subject: 'Jenkins Job', to: 'sanskar.agrawal@st.niituniversity.in'
+            }
+           
+        }
         stage('Building our image') { 
             steps { 
                 script { 
